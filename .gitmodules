@@ -1,0 +1,3 @@
+[submodule "FPL-vaastav"]
+	path = FPL-vaastav
+	url = git@github.com:vaastav/Fantasy-Premier-League.git
