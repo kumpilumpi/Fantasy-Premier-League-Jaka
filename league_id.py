@@ -96,7 +96,7 @@ def csv_players_in_league(jsondic=league()):
 
 # print(results[1].keys())
 
-# make_folder()
-csv_players_in_league(league())
-csv_league_info(league())
+# # make_folder()
+# csv_players_in_league(league())
+# csv_league_info(league())
 
