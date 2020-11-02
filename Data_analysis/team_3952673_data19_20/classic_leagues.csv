@@ -1,0 +1,5 @@
+,id,name,short_name,created,closed,rank,max_entries,league_type,scoring,admin_entry,start_event,entry_rank,entry_last_rank,entry_can_leave,entry_can_admin,entry_can_invite
+0,215,Slovenia,region-195,2020-08-15T09:00:50.577411Z,False,,,s,c,,1,464,280,False,False,False
+1,276,Gameweek 1,event-1,2020-08-15T09:00:52.298412Z,False,,,s,c,,1,467833,306089,False,False,False
+2,314,Overall,overall,2020-08-15T09:00:54.021038Z,False,,,s,c,,1,470156,307356,False,False,False
+3,746814,PL 2019/20,,2020-09-08T07:38:37.027345Z,False,,,x,c,3327253.0,1,1,1,True,False,False
