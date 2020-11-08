@@ -1,0 +1,8 @@
+,id,name,short_name,created,closed,rank,max_entries,league_type,scoring,admin_entry,start_event,entry_rank,entry_last_rank,entry_can_leave,entry_can_admin,entry_can_invite
+0,11,Liverpool,team-11,2020-08-15T09:00:47.011825Z,False,,,s,c,,1,99810,90098,False,False,False
+1,215,Slovenia,region-195,2020-08-15T09:00:50.577411Z,False,,,s,c,,1,825,653,False,False,False
+2,276,Gameweek 1,event-1,2020-08-15T09:00:52.298412Z,False,,,s,c,,1,789665,672358,False,False,False
+3,314,Overall,overall,2020-08-15T09:00:54.021038Z,False,,,s,c,,1,794345,676537,False,False,False
+4,2119,Odprto Prvenstvo Slavca Malgaja,,2020-08-15T10:04:36.664734Z,False,,,x,c,9007.0,1,11,9,True,False,False
+5,650780,Liverpool FC Slovenia,,2020-09-06T10:22:50.765166Z,False,,,x,c,2921564.0,1,34,26,True,False,False
+6,746814,PL 2019/20,,2020-09-08T07:38:37.027345Z,False,,,x,c,3327253.0,1,2,2,True,False,False

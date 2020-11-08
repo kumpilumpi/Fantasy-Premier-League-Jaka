@@ -1,0 +1,9 @@
+,id,name,short_name,created,closed,rank,max_entries,league_type,scoring,admin_entry,start_event,entry_rank,entry_last_rank,entry_can_leave,entry_can_admin,entry_can_invite
+0,5,Chelsea,team-5,2020-08-15T09:00:46.916684Z,False,,,s,c,,1,168569,153542,False,False,False
+1,215,Slovenia,region-195,2020-08-15T09:00:50.577411Z,False,,,s,c,,1,2461,2363,False,False,False
+2,276,Gameweek 1,event-1,2020-08-15T09:00:52.298412Z,False,,,s,c,,1,2540313,2447092,False,False,False
+3,314,Overall,overall,2020-08-15T09:00:54.021038Z,False,,,s,c,,1,2591020,2493654,False,False,False
+4,746814,PL 2019/20,,2020-09-08T07:38:37.027345Z,False,,,x,c,3327253.0,1,9,8,True,False,False
+5,1373653,Japjapjap,,2020-09-14T08:35:06.708919Z,False,,,x,c,1457623.0,2,3,3,False,True,True
+6,1572828,JEZNI PIGVINCKI,,2020-09-30T18:07:07.914804Z,False,,,x,c,1457623.0,4,2,2,False,True,True
+7,1667708,PREVELIK PENIS,,2020-10-31T16:55:37.281301Z,False,,,x,c,1457623.0,7,2,2,False,True,True

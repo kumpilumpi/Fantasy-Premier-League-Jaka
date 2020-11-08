@@ -1,0 +1,7 @@
+,id,name,short_name,created,closed,rank,max_entries,league_type,scoring,admin_entry,start_event,entry_rank,entry_last_rank,entry_can_leave,entry_can_admin,entry_can_invite
+0,1,Arsenal,team-1,2020-08-15T09:00:46.854465Z,False,,,s,c,,1,205156,262286,False,False,False
+1,215,Slovenia,region-195,2020-08-15T09:00:50.577411Z,False,,,s,c,,1,2884,3480,False,False,False
+2,276,Gameweek 1,event-1,2020-08-15T09:00:52.298412Z,False,,,s,c,,1,3000346,3615884,False,False,False
+3,314,Overall,overall,2020-08-15T09:00:54.021038Z,False,,,s,c,,1,3078866,3751023,False,False,False
+4,656576,Nogometni navdušenci official,,2020-09-06T12:39:14.561844Z,False,,,x,c,955378.0,1,221,259,True,False,False
+5,746814,PL 2019/20,,2020-09-08T07:38:37.027345Z,False,,,x,c,3327253.0,1,11,12,True,False,False

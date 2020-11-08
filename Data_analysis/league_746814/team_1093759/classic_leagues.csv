@@ -1,0 +1,10 @@
+,id,name,short_name,created,closed,rank,max_entries,league_type,scoring,admin_entry,start_event,entry_rank,entry_last_rank,entry_can_leave,entry_can_admin,entry_can_invite
+0,13,Man Utd,team-13,2020-08-15T09:00:47.045183Z,False,,,s,c,,1,153054,221621,False,False,False
+1,215,Slovenia,region-195,2020-08-15T09:00:50.577411Z,False,,,s,c,,1,1141,1680,False,False,False
+2,276,Gameweek 1,event-1,2020-08-15T09:00:52.298412Z,False,,,s,c,,1,1098735,1729333,False,False,False
+3,314,Overall,overall,2020-08-15T09:00:54.021038Z,False,,,s,c,,1,1107140,1750903,False,False,False
+4,16137,Salah the best,,2020-08-15T11:42:11.032521Z,False,,,x,c,76689.0,1,1,2,True,False,False
+5,62086,Veliki Študentski Meni,,2020-08-15T19:56:58.641570Z,False,,,x,c,288187.0,1,12,16,True,False,False
+6,421108,Manchester United SLOVENIJA,,2020-08-28T21:28:26.925297Z,False,,,x,c,142485.0,1,17,26,True,False,False
+7,684269,YITGWMR’s league of kings,,2020-09-07T05:37:30.028870Z,False,,,x,c,2364006.0,1,225,347,True,False,False
+8,746814,PL 2019/20,,2020-09-08T07:38:37.027345Z,False,,,x,c,3327253.0,1,4,4,True,False,False
