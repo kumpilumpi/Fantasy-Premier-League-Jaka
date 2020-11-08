@@ -1,7 +1,4 @@
-# Poskusam iz league ID dobiti id od vseh team v tej ligi.
-
-# https://github.com/spinach/FantasyPremierLeague.py/tree/python3
-#   Git repozitorji z kodo
+# Poskusam iz league ID dobiti id od vseh team v tej ligi.w
 
 # spletni naslov za naš league id --> https://fantasy.premierleague.com/api/leagues-classic/746814/standings/
 
@@ -11,7 +8,7 @@
 import requests
 import json
 import os
-import sys
+# import sys
 import csv
 
 #---------------------Variabiles-----------------------
@@ -25,13 +22,15 @@ null = None
 
 #Imam funkcije, ki mi z League_id naredijo mapo shranijo notr json in csv z info o ligi igralci 
 
+#Team id != entry za Vaastav team_getters izgleda, da rabiš entry number
+
 #v csv file piše vsakič z dodatno vrstico presledka bo problem za pandas?
 
 #---------------------Functions-----------------------
 
 
 def make_folder(ime): #dela
-    'Creates folder where all csv and jsos will be located'
+    'Creates folder where all csv and json will be located'
     if not os.path.exists(os.path.join('Data_analysis', ime)):
         os.makedirs(os.path.join('Data_analysis', ime))
     pass
@@ -79,16 +78,30 @@ def csv_players_in_league(league_id, jsondic):
     pass
 
 
+def list_entry_id(jsondic): #preveri zgleda ok
+    'Returns list of entries from every player in a league' #z temi številkami pregledamo pol vsakega igralca v ligi
+
+    results = standings = jsondic.get('standings')
+    results = standings.get('results')
+    entry = []
+
+    for player in results:
+        entry.append(player.get('entry')) # rabimo entry ne id
+    
+    return entry
+
+
 def main_fun(id):
     'Combines all other functions'
     league_id = str(id)
 
-    jsondic = league(league_id)
+    jsondic = league(league_id) #vrne slovar iz jsona
+
     make_folder(f'league_{league_id}')
     csv_league_info(league_id,jsondic)
     csv_players_in_league(league_id, jsondic)
 
-    pass
+    return list_entry_id(jsondic) #seznam z vsemi idji igralcev v ligi 
 
 #-----------Preverjanje------------
 
@@ -104,4 +117,4 @@ def main_fun(id):
 # csv_league_info(league())
 
 
-# main_fun(355255)
+# print(main_fun(746814))
