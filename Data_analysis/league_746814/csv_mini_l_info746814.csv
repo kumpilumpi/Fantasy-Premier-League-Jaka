@@ -1,2 +1,2 @@
-id,name,created,closed,max_entries,league_type,scoring,admin_entry,start_event,code_privacy,rank
-746814,PL 2019/20,2020-09-08T07:38:37.027345Z,False,,x,c,3327253,1,p,
+id,name,created,closed,max_entries,league_type,scoring,admin_entry,start_event,code_privacy,has_cup,cup_league,rank
+746814,PL 2019/20,2020-09-08T07:38:37.027345Z,False,,x,c,3327253,1,p,False,,

@@ -1,0 +1,16 @@
+element,position,multiplier,is_captain,is_vice_captain
+548,1,1,False,False
+313,2,1,False,False
+88,3,1,False,False
+255,4,1,False,False
+390,5,2,False,True
+37,6,1,False,False
+254,7,1,True,False
+275,8,1,False,False
+388,9,1,False,False
+506,10,1,False,False
+202,11,1,False,False
+32,12,0,False,False
+209,13,0,False,False
+467,14,0,False,False
+380,15,0,False,False

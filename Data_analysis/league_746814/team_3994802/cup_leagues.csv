@@ -1,1 +1,3 @@
-""
+,id,entry_1_entry,entry_1_name,entry_1_player_name,entry_1_points,entry_1_win,entry_1_draw,entry_1_loss,entry_1_total,entry_2_entry,entry_2_name,entry_2_player_name,entry_2_points,entry_2_win,entry_2_draw,entry_2_loss,entry_2_total,is_knockout,winner,seed_value,event,tiebreak
+0,46794783,3994802,YNWA,Miha Petrič,45,0,0,0,0,3494327,Shut The Facup,Jacob Thompson,58,0,0,0,0,True,3494327,,18,
+1,43873797,2902250,HaHaHaHaHa,mohammed zaman,70,0,0,0,0,3994802,YNWA,Miha Petrič,74,0,0,0,0,True,3994802,,17,

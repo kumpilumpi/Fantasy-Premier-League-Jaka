@@ -1,8 +1,8 @@
-,id,name,short_name,created,closed,rank,max_entries,league_type,scoring,admin_entry,start_event,entry_rank,entry_last_rank,entry_can_leave,entry_can_admin,entry_can_invite
-0,5,Chelsea,team-5,2020-08-15T09:00:46.916684Z,False,,,s,c,,1,139972,112552,False,False,False
-1,215,Slovenia,region-195,2020-08-15T09:00:50.577411Z,False,,,s,c,,1,2063,1777,False,False,False
-2,276,Gameweek 1,event-1,2020-08-15T09:00:52.298412Z,False,,,s,c,,1,2120143,1833509,False,False,False
-3,314,Overall,overall,2020-08-15T09:00:54.021038Z,False,,,s,c,,1,2152692,1857800,False,False,False
-4,510102,Vrelišče,,2020-09-01T18:35:55.963131Z,False,,,x,c,1539453.0,1,2,2,True,False,False
-5,746814,PL 2019/20,,2020-09-08T07:38:37.027345Z,False,,,x,c,3327253.0,1,6,5,True,False,False
-6,1473486,ML League,,2020-09-20T11:51:28.837028Z,False,,,x,c,5687292.0,1,2,2,False,True,True
+,id,name,short_name,created,closed,rank,max_entries,league_type,scoring,admin_entry,start_event,entry_can_leave,entry_can_admin,entry_can_invite,has_cup,cup_league,cup_qualified,entry_rank,entry_last_rank
+0,5,Chelsea,team-5,2020-08-15T09:00:46.916684Z,False,,,s,c,,1,False,False,False,False,,,115152,83705
+1,215,Slovenia,region-195,2020-08-15T09:00:50.577411Z,False,,,s,c,,1,False,False,False,False,,,1976,1576
+2,276,Gameweek 1,event-1,2020-08-15T09:00:52.298412Z,False,,,s,c,,1,False,False,False,False,,,1930634,1446976
+3,314,Overall,overall,2020-08-15T09:00:54.021038Z,False,,,s,c,,1,False,False,False,True,315.0,True,1985063,1474333
+4,510102,Vrelišče,,2020-09-01T18:35:55.963131Z,False,,,x,c,1539453.0,1,True,False,False,False,,,4,2
+5,746814,PL 2019/20,,2020-09-08T07:38:37.027345Z,False,,,x,c,3327253.0,1,True,False,False,False,,,9,8
+6,1473486,ML League,,2020-09-20T11:51:28.837028Z,False,,,x,c,5687292.0,1,False,True,True,False,,,2,2

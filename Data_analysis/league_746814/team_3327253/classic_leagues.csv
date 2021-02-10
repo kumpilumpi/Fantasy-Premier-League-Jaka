@@ -1,7 +1,7 @@
-,id,name,short_name,created,closed,rank,max_entries,league_type,scoring,admin_entry,start_event,entry_rank,entry_last_rank,entry_can_leave,entry_can_admin,entry_can_invite
-0,5,Chelsea,team-5,2020-08-15T09:00:46.916684Z,False,,,s,c,,1,61208,86743,False,False,False
-1,215,Slovenia,region-195,2020-08-15T09:00:50.577411Z,False,,,s,c,,1,958,1398,False,False,False
-2,276,Gameweek 1,event-1,2020-08-15T09:00:52.298412Z,False,,,s,c,,1,930854,1432326,False,False,False
-3,314,Overall,overall,2020-08-15T09:00:54.021038Z,False,,,s,c,,1,937078,1447133,False,False,False
-4,746814,PL 2019/20,,2020-09-08T07:38:37.027345Z,False,,,x,c,3327253.0,1,3,3,False,True,True
-5,1105428,Troll Football,,2020-09-11T16:50:46.013225Z,False,,,x,c,4824395.0,1,3210,4438,True,False,False
+,id,name,short_name,created,closed,rank,max_entries,league_type,scoring,admin_entry,start_event,entry_can_leave,entry_can_admin,entry_can_invite,has_cup,cup_league,cup_qualified,entry_rank,entry_last_rank
+0,5,Chelsea,team-5,2020-08-15T09:00:46.916684Z,False,,,s,c,,1,False,False,False,False,,,116663,110763
+1,215,Slovenia,region-195,2020-08-15T09:00:50.577411Z,False,,,s,c,,1,False,False,False,False,,,2000,1936
+2,276,Gameweek 1,event-1,2020-08-15T09:00:52.298412Z,False,,,s,c,,1,False,False,False,False,,,1953663,1881447
+3,314,Overall,overall,2020-08-15T09:00:54.021038Z,False,,,s,c,,1,False,False,False,True,315.0,True,2009575,1930725
+4,746814,PL 2019/20,,2020-09-08T07:38:37.027345Z,False,,,x,c,3327253.0,1,False,True,True,False,,,11,10
+5,1105428,Troll Football,,2020-09-11T16:50:46.013225Z,False,,,x,c,4824395.0,1,True,False,False,False,,,6977,6775

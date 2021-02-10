@@ -1,1 +1,3 @@
-""
+,id,entry_1_entry,entry_1_name,entry_1_player_name,entry_1_points,entry_1_win,entry_1_draw,entry_1_loss,entry_1_total,entry_2_entry,entry_2_name,entry_2_player_name,entry_2_points,entry_2_win,entry_2_draw,entry_2_loss,entry_2_total,is_knockout,winner,seed_value,event,tiebreak
+0,46156604,487742,Opportunist FC,Alan Bennett,59,0,0,0,0,1093759,IIIII,Matija Peršl,48,0,0,0,0,True,487742,,18,
+1,44265531,1093759,IIIII,Matija Peršl,50,0,0,0,0,6230734,Hardkoksy,Haj mdal,24,0,0,0,0,True,1093759,,17,

@@ -1,7 +1,7 @@
-,id,name,short_name,created,closed,rank,max_entries,league_type,scoring,admin_entry,start_event,entry_rank,entry_last_rank,entry_can_leave,entry_can_admin,entry_can_invite
-0,11,Liverpool,team-11,2020-08-15T09:00:47.011825Z,False,,,s,c,,1,294519,265055,False,False,False
-1,215,Slovenia,region-195,2020-08-15T09:00:50.577411Z,False,,,s,c,,1,2279,1942,False,False,False
-2,276,Gameweek 1,event-1,2020-08-15T09:00:52.298412Z,False,,,s,c,,1,2336744,2000477,False,False,False
-3,314,Overall,overall,2020-08-15T09:00:54.021038Z,False,,,s,c,,1,2377799,2029828,False,False,False
-4,179200,This Is Anfield,,2020-08-18T21:29:02.220135Z,False,,,x,c,862930.0,1,1519,1334,True,False,False
-5,746814,PL 2019/20,,2020-09-08T07:38:37.027345Z,False,,,x,c,3327253.0,1,8,6,True,False,False
+,id,name,short_name,created,closed,rank,max_entries,league_type,scoring,admin_entry,start_event,entry_can_leave,entry_can_admin,entry_can_invite,has_cup,cup_league,cup_qualified,entry_rank,entry_last_rank
+0,11,Liverpool,team-11,2020-08-15T09:00:47.011825Z,False,,,s,c,,1,False,False,False,False,,,160603,134746
+1,215,Slovenia,region-195,2020-08-15T09:00:50.577411Z,False,,,s,c,,1,False,False,False,False,,,1353,1183
+2,276,Gameweek 1,event-1,2020-08-15T09:00:52.298412Z,False,,,s,c,,1,False,False,False,False,,,1222379,1023211
+3,314,Overall,overall,2020-08-15T09:00:54.021038Z,False,,,s,c,,1,False,False,False,True,315.0,True,1242316,1036354
+4,179200,This Is Anfield,,2020-08-18T21:29:02.220135Z,False,,,x,c,862930.0,1,True,False,False,False,,,922,800
+5,746814,PL 2019/20,,2020-09-08T07:38:37.027345Z,False,,,x,c,3327253.0,1,True,False,False,False,,,7,4
