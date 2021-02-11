@@ -9,14 +9,14 @@ sys.path.insert(0, os.path.join('FPL-vaastav')) #Omogoča, da se teams_scraper i
 
 #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-from teams_scraper import * #napaka, prej je ni bilo?????
+from teams_scraper import * #napaka, prej je ni bilo????? -> ali je popravljena?
 
 
 #-------------------Komentarji-----------------
 
 #kaj pa če mape za ligo še ni
 
-#Neki file od vaastava majo mogoče ugrajeno notr, časovn terminate če pedolg časa ne prenese file. Vsake tok časa kšnga entrya ne prenese
+#Neki file od vaastava majo mogoče ugrajeno notr, časovn terminate če predolg časa ne prenese file. Vsake tok časa kšnga entrya ne prenese
 
 #Problem league_id ni entry id, kar v bistvu rabimmo za teams scrapper ----> Popravljeno
 
@@ -56,4 +56,4 @@ def poberi_vsi(league_id, list_entry): # Za eno zgleda vredu več funkcij povzro
 
 #----------------------Test-----------------------------
 # poberi(746814, 3952673)
-# poberi_vsi(746814, [3952673, 5090020, 3327253, 1093759, 4999866, 5687292, 1025697, 3994802, 1457623, 4900127, 1841136, 5209323, 5039919, 7069926]) #pobralo vse razen ene
+#poberi_vsi(746814, [3952673, 5090020, 3327253, 1093759, 4999866, 5687292, 1025697, 3994802, 1457623, 4900127, 1841136, 5209323, 5039919, 7069926]) #pobralo vse razen ene

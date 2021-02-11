@@ -23,7 +23,7 @@ import sys
 
 def get_dic(league_id):
     '''Creates dictionary of {id : name}'''
-    gen_path = os.path.join(os.pardir, 'Data_analysis', f'league_{league_id}', f'csv_mini_l_players{league_id}.csv')
+    gen_path = os.path.join(os.pardir, 'Data_analysis', f'league_{league_id}', f'csv_mini_l_players{league_id}.csv') # -> Probaj os.pardir dati v except
     df_general = pd.read_csv(gen_path)
 
     ids = df_general.entry.tolist()
@@ -37,7 +37,7 @@ def get_list_id(league_id):
 
 
 def gws_collect(league_id): 
-    ''' Collects info about gws from each player and joins then in one df'''
+    ''' Collects info about gws from each player and joins then in one dictionary {id : df} '''
     gws_pl = {}
 
     for (id_ , name) in get_dic(league_id).items() :
@@ -51,18 +51,19 @@ def gws_collect(league_id):
             print(f"Problem with {id_} - {name}")           
             
     #Je naredil slovar id : df -> združimo vse v en df
-    df = pd.concat(list(gws_pl.values()))    
-    return df
+    # df = pd.concat(list(gws_pl.values()))
+    
+    return gws_pl # -> Če bomo rabl bomo že v pandasih združl pol
 
 
 
-# def chips_collect():
-#     ''' Collects info about chips for each player in a dictionary '''
-#     chips_pl = {}
-#     for id in list_id:
-#         rel_path = path.join('Data_analysis', f'league_{league_id}', f'team_{id}', 'chips.csv')
-#         chips_pl[f'chips_{id}'] = pd.read_csv(rel_path) # dela
-#     return chips_pl
+def chips_collect(league_id):
+    ''' Collects info about chips for each player in a dictionary '''
+    chips_pl = {}
+    for id in list_id:
+        rel_path = path.join(os.pardir, 'Data_analysis', f'league_{league_id}', f'team_{id}', 'chips.csv')
+        chips_pl[f'chips_{id}'] = pd.read_csv(rel_path) # dela
+    return chips_pl
 
 #-----------------------------------
 
