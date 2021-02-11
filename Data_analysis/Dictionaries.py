@@ -1,32 +1,73 @@
-# orodja s katerimi bi pobiral dataframe in vse  skupa shranjeval v slovarjih, treba bo veliko vnest
+# orodja s katerimi bi pobiral dataframe in vse  skupaj shranjeval v slovarjih, treba bo veliko vnest
 
 #-------------Imports---------------
 
 import pandas as pd
-from os import path
+import os 
+import sys
+
+# print (sys.path)
 
 #-----------------------------------
+
+# Hočem dictionary, liga =  {[ime-ekipe, id] : dataframe-vsi podatki v ekipi }
+#dataframes
+    # csv_mini_l_players<id>.csv -> vsi osnovni podatki (imena. id, ...)
+    # GWs ->
+    # En skupni dataframe, k bo vseboval vse picke/ekipe vseh GW
+    # uporabljeni chipi (a ne kaže pri pickih ? )
+    # vse menjave
+
 
 #--------------Fun------------------
 
-list_id = []
+def get_dic(league_id):
+    '''Creates dictionary of {id : name}'''
+    gen_path = os.path.join(os.pardir, 'Data_analysis', f'league_{league_id}', f'csv_mini_l_players{league_id}.csv')
+    df_general = pd.read_csv(gen_path)
 
-def chips_collect():
-    ''' Collects info about chips for each player in a dictionary '''
-    chips_pl = {}
-    for id in list_id:
-        rel_path = path.join('Data_analysis', f'league_{league_id}', f'team_{id}', 'chips.csv') # ------------------> ? Zkj data_analysis ?????
-        chips_pl[f'chips_{id}'] = pd.read_csv(rel_path) # dela
-    return chips_pl
+    ids = df_general.entry.tolist()
+    names = df_general.entry_name.tolist()
+    dic_id_name ={ids[i] : names[i] for i in range(len(ids))}
+    return dic_id_name
 
-def gws_collect(league_id, list_id):
-    ''' Collects info about gws for each player in a dictionary'''
+
+def get_list_id(league_id): 
+    return list(get_dic(league_id).keys())
+
+
+def gws_collect(league_id): 
+    ''' Collects info about gws from each player and joins then in one df'''
     gws_pl = {}
-    for id in list_id:
-        rel_path = path.join('Data_analysis', f'league_{league_id}', f'team_{id}', 'gws.csv') # ------------------> ? Zkj data_analysis ?????
-        gws_pl[f'chips_{id}'] = pd.read_csv(rel_path) # dela
-    return gws_pl
+
+    for (id_ , name) in get_dic(league_id).items() :
+        try:
+            rel_path = os.path.join(os.pardir, 'Data_analysis', f'league_{league_id}', f'team_{id_}', 'gws.csv') # os.pardir -> ker ko importam v drug file se tam poti pokvarijo, ne vem zkj
+            df = pd.read_csv(rel_path)
+            df["id"] = id_
+            df["team_name"] = name
+            gws_pl[id_] = df
+        except:
+            print(f"Problem with {id_} - {name}")           
+            
+    #Je naredil slovar id : df -> združimo vse v en df
+    df = pd.concat(list(gws_pl.values()))    
+    return df
+
+
+
+# def chips_collect():
+#     ''' Collects info about chips for each player in a dictionary '''
+#     chips_pl = {}
+#     for id in list_id:
+#         rel_path = path.join('Data_analysis', f'league_{league_id}', f'team_{id}', 'chips.csv')
+#         chips_pl[f'chips_{id}'] = pd.read_csv(rel_path) # dela
+#     return chips_pl
 
 #-----------------------------------
 
-# x = chips_collect(746814, [1025697])
+
+
+#-----------------------------------
+# x = gws_collect(746814)
+
