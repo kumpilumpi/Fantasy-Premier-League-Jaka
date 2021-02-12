@@ -9,7 +9,7 @@ Za prenos podatkov sem se naslonil že na izdelan repozitorij vaastav/Fantasy-Pr
 
 * Datoteka *League_info.py* poskrbi za prenos podatkov o miniligi. Ustvari mapo league_<*league_id*>, vanjo shrani json vseh podatkov o ligi (imena ekip, idji ekip, kdaj je bila liga ustvarjena,...) in ga nato preoblikuje v uporaben csv.
 * Nato datoteka player_scraper.py s pomočjo vaastav/Fantasy-Premier-League repozitorija pobere podatke o vsakem igralcu iz dane minilige. 
-* Datoteka main pa združuje obe datoteki in omogoča njuno izvršite z ukazom iz terminala *python Main.py <League_id>*.
+* Datoteka main pa združuje obe datoteki in omogoča njuno izvršitev z ukazom iz terminala *python Main.py <League_id>*.
 
 ## Analiza podatkov
 
