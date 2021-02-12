@@ -28,11 +28,9 @@ Trenutno:
 * Orodja za prenos podatkov so ustvarjena z ukazom *python Main.py <League_id>* se prenesejo podatki poljubne minilige v folder league_<league_id>
 * Ni pa še povsem avtomatizirana analiza minilige
   
-  
-  
-Končna verzija readme
+
 <hr>
-  
+Končna verzija readme    
   
 # FANATSY PREMIER LEAGUE ANALYSIS
 
