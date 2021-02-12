@@ -1,13 +1,25 @@
 # Projektna naloga - Analiza Fantasy Premier league
 
-Želim analizirati FPL (fantasy premier league) posamezne ekipe, mini lige in najboljše igralce. Ker je FPL  zelo popularna igra z že vzpostavljenim okoljem rednih igralcev, bi v končni fazi želel ustvariti program, ki bi ga lahko uporabljali vsi igralci FPL. Nekaj takih programov že obstaja eden izmed najbolj popularnih repozitorijev za analizo FPL je vaastav/Fantasy-Premier-League, od katerega sem tudi sam pobral določena orodja. Nisem pa še zasledil programov (vsaj ne takih zastonj), ki omogočajo analizo posamezne mini lige (lige, v kateri nastopajo le posamezne FPL ekipe).
+Če ne poznate Fantasy Premier League preberi zadnji dva naslova v angleščini.  
 
-Cilj v tej projektni nalogi je:
-### 1. Analizirati resnične igralce Premier lige in njihov vpliv na Fantasy Premier league.
+V tej projektni nalogi bom analiziral podatke Fantasy premier League (FPL). Cilj je analizirati igralce trenutne sezone in managerje v moji prijateljski miniligi. Želja pa je to projektno nalogo v prihodnosti še precej razširiti da bo uporabna za analizo poljubne minilige.
 
-V datoteki Anlaiza_igralcev analiziram podatke igralcev Premier League predvsem njihov vpliv v FPL.
+## Prenos in urejanje podatkov
+Za prenos podatkov sem se naslonil že na izdelan repozitorij vaastav/Fantasy-Premier-League in uporabil nekaj danih orodji za prenos ekip. Žal pa dan repozitorij ne ponuja možnosti prenosa podatkov minilige le posamezne igralce. 
 
-### 2. Analiza minilige
+* Datoteka *League_info.py* poskrbi za prenos podatkov o miniligi. Ustvari mapo league_<*league_id*>, vanjo shrani json vseh podatkov o ligi (imena ekip, idji ekip, kdaj je bila liga ustvarjena,...) in ga nato preoblikuje v uporaben csv.
+* Nato datoteka player_scraper.py s pomočjo vaastav/Fantasy-Premier-League repozitorija pobere podatke o vsakem igralcu iz dane minilige. 
+* Datoteka main pa združuje obe datoteki in omogoča njuno izvršite z ukazom iz terminala *python Main.py <League_id>*.
+
+## Analiza podatkov
+
+Analiziral bom dva sklopa podatkov:
+
+### 1. Resnične igralce Premier lige in njihov vpliv na Fantasy Premier league.
+
+V datoteki Analiza_igralcev analiziram podatke igralcev Premier League predvsem njihov vpliv v FPL.
+
+### 2. Miniliga
 
 V datoteki miniliga_746814 pa analiziram miniligo FPL 2020/21 (League_id 746814), v kateri igramo manjša skupina prijateljev. 
 
@@ -22,7 +34,7 @@ V datoteki miniliga_746814 pa analiziram miniligo FPL 2020/21 (League_id 746814)
 .  
 .  
 
-Želim pa si še več in razširiti projekt  z čimbolj avtomatiziranimi orodji za analizo poljubne minilige. Pri končnem izdelku naj bi samo s preprostim ukazom v command line *python Main.py <League_id>* prenesel vse potrebne datoteke s interneta jih shrani in nato ustvrail še dodatno datoteko s osnovno analizo te minilige (po zgledu miniliga_746814)
+Želim pa si še več in razširiti projekt z čimbolj avtomatiziranimi orodji za analizo poljubne minilige, tako da bi ga lahko uporabljalo čimveč Fantasy managerjev. Pri končnem izdelku naj bi samo s preprostim ukazom v command line *python Main.py <League_id>* prenesel vse potrebne datoteke s interneta jih shrani in nato ustvrail še dodatno datoteko s osnovno analizo te minilige (po zgledu miniliga_746814)
  
 Trenutno:
 * Orodja za prenos podatkov so ustvarjena z ukazom *python Main.py <League_id>* se prenesejo podatki poljubne minilige v folder league_<league_id>
