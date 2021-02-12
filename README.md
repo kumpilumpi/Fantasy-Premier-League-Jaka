@@ -5,7 +5,7 @@
 V tej projektni nalogi bom analiziral podatke Fantasy premier League (FPL). Cilj je analizirati igralce trenutne sezone in managerje v moji prijateljski miniligi. Želja pa je to projektno nalogo v prihodnosti še precej razširiti da bo uporabna za analizo poljubne minilige.
 
 ## Prenos in urejanje podatkov
-Za prenos podatkov sem se naslonil že na izdelan repozitorij vaastav/Fantasy-Premier-League in uporabil nekaj danih orodji za prenos podatkov ekip. Žal pa dan repozitorij ne ponuja možnosti prenosa podatkov minilige le posamezne igralce. 
+Za prenos podatkov sem se naslonil že na izdelan repozitorij vaastav/Fantasy-Premier-League in uporabil nekaj danih orodji za prenos podatkov ekip. Žal pa dan repozitorij ne ponuja možnosti prenosa podatkov o miniligi, ampak le posamezne igralce. 
 
 * Datoteka *League_info.py* poskrbi za prenos podatkov o miniligi. Ustvari mapo league_<*league_id*>, vanjo shrani json vseh podatkov o ligi (imena ekip, idji ekip, kdaj je bila liga ustvarjena,...) in ga nato preoblikuje v uporaben csv.
 * Nato datoteka player_scraper.py s pomočjo vaastav/Fantasy-Premier-League repozitorija pobere podatke o vsakem igralcu iz dane minilige. 
