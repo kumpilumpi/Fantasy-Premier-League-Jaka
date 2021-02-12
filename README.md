@@ -11,26 +11,29 @@ V datoteki Anlaiza_igralcev analiziram podatke igralcev Premier League predvsem 
 
 V datoteki miniliga_746814 pa analiziram miniligo FPL 2020/21 (League_id 746814), v kateri igramo manjša skupina prijateljev. 
 
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
+.  
+.  
+.  
+.  
+.  
+.  
+.  
+.  
+.  
+.  
 
 Želim pa si še več in razširiti projekt  z čimbolj avtomatiziranimi orodji za analizo poljubne minilige. Pri končnem izdelku naj bi samo s preprostim ukazom v command line *python Main.py <League_id>* prenesel vse potrebne datoteke s interneta jih shrani in nato ustvrail še dodatno datoteko s osnovno analizo te minilige (po zgledu miniliga_746814)
  
 Trenutno:
 * Orodja za prenos podatkov so ustvarjena z ukazom *python Main.py <League_id>* se prenesejo podatki poljubne minilige v folder league_<league_id>
 * Ni pa še povsem avtomatizirana analiza minilige
-
-* Kočna verzija readme
-
-
+  
+  
+  
+Končna verzija readme
+<hr>
+  
+  
 # FANATSY PREMIER LEAGUE ANALYSIS
 
 ## Fantasy Premier League (FPL)
