@@ -1,6 +1,6 @@
 # Projektna naloga - Analiza Fantasy Premier league
 
-Če ne poznate Fantasy Premier League preberi zadnji dva naslova v angleščini.  
+Če ne poznate Fantasy Premier League preberi zadnja dva naslova v angleščini.  
 
 V tej projektni nalogi bom analiziral podatke Fantasy premier League (FPL). Cilj je analizirati igralce trenutne sezone in managerje v moji prijateljski miniligi. Želja pa je to projektno nalogo v prihodnosti še precej razširiti da bo uporabna za analizo poljubne minilige.
 
