@@ -2,7 +2,7 @@
 Zadnja točka opis za projektno nalogo.
 
 ## FPL
-Fantasy Premier League is a game that casts you in the role of a Fantasy manager. You are given the task to pick a squad of real-life players who score points for your team based on their performances in their own matches.
+Fantasy Premier League is a game that casts you in the role of a Fantasy manager. You are given the task to pick a squad of real-life players who score points for your team based on their performances in their matches.
 
 ## ANALYSIS
 The FPL is online multiplayer strategic game. You need to include players in your squad that have a highest chance of producing points, but you are limited by player's price and position. There are many factors to consider when transfering player in or out, player form, team form, fixtures, price rises and falls and much more. So to make this a bit easier I am trying to make some tools to collect team data write it in easy to work with csv files and then analyse that with python pandas. FPL is played through entirety of premier league season. I will try to make these tools to be useful for every gameweek.
