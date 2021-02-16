@@ -23,7 +23,7 @@ import sys
 
 def get_dic(league_id):
     '''Creates dictionary of {id : name}'''
-    gen_path = os.path.join(os.pardir, 'Data_analysis', f'league_{league_id}', f'csv_mini_l_players{league_id}.csv') # -> Probaj os.pardir dati v except
+    gen_path = os.path.join( os.pardir, 'Data_analysis', f'league_{league_id}', f'csv_mini_l_players{league_id}.csv') # -> Probaj os.pardir dati v except
     df_general = pd.read_csv(gen_path)
 
     ids = df_general.entry.tolist()
@@ -50,7 +50,7 @@ def gws_collect(league_id):
         except:
             print(f"Problem with {id_} - {name}")           
             
-    #Je naredil slovar id : df -> združimo vse v en df
+    #Je naredil slovar id : df -> združimo vse v en df -> nardimo raj to kr v .ipnyb filu
     # df = pd.concat(list(gws_pl.values()))
     
     return gws_pl # -> Če bomo rabl bomo že v pandasih združl pol
@@ -60,9 +60,31 @@ def gws_collect(league_id):
 def chips_collect(league_id):
     ''' Collects info about chips for each player in a dictionary '''
     chips_pl = {}
-    for id in list_id:
-        rel_path = path.join(os.pardir, 'Data_analysis', f'league_{league_id}', f'team_{id}', 'chips.csv')
-        chips_pl[f'chips_{id}'] = pd.read_csv(rel_path) # dela
+    for (id_ , name) in get_dic(league_id).items() :
+        try:
+            rel_path = os.path.join(os.pardir, 'Data_analysis', f'league_{league_id}', f'team_{id_}', 'chips.csv') # os.pardir -> ker ko importam v drug file se tam poti pokvarijo, ne vem zkj
+            df = pd.read_csv(rel_path)
+            df["id"] = id_
+            df["team_name"] = name
+            chips_pl[id_] = df
+        except:
+            pass
+    return chips_pl
+
+
+def picks_collect(league_id):
+    ''' Collects info about chips for each player in a dictionary '''
+    picks = {}
+    
+    for (id_ , name) in get_dic(league_id).items() :
+        try:
+            rel_path = os.path.join(os.pardir, 'Data_analysis', f'league_{league_id}', f'team_{id_}', 'chips.csv') # os.pardir -> ker ko importam v drug file se tam poti pokvarijo, ne vem zkj
+            df = pd.read_csv(rel_path)
+            df["id"] = id_
+            df["team_name"] = name
+            chips_pl[id_] = df
+        except:
+            pass
     return chips_pl
 
 #-----------------------------------
@@ -70,5 +92,5 @@ def chips_collect(league_id):
 
 
 #-----------------------------------
-# x = gws_collect(746814)
+x = chips_collect(746814)
 

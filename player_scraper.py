@@ -1,15 +1,13 @@
 # z vaastav team scrapper pobere info o ekipi
 
-
 #-------------------Imports-----------------
 import sys
 import os
 
 sys.path.insert(0, os.path.join('FPL-vaastav')) #Omogoča, da se teams_scraper importa, ker je v drugi mapi
 
-#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-from teams_scraper import * #napaka, prej je ni bilo????? -> ali je popravljena?
+from teams_scraper import * #ni napake
 
 
 #-------------------Komentarji-----------------
@@ -24,32 +22,28 @@ from teams_scraper import * #napaka, prej je ni bilo????? -> ali je popravljena?
 
 def poberi(league_id, id): #namenjena da teče le znotraj poberi vse
     'Creates a folder and uses teams_scrapper on one team to dump all data in there'
-
     output_folder = "team_" + str(id)
-
     #------Sama ta funkcija dela file v napačnem folderju
     # path_cd = os.path.join('Data_analysis', f'league_{league_id}') 
     # os.chdir(path_cd)
     #------To popravi lokacijo, ta koda je v poberi_vse(), ki popravi težavo
-
     if not os.path.exists(output_folder): #ker smo šli z chdir že v league folder je kle output folder ok
         os.mkdir(output_folder) 
     store_data(id, output_folder) #ni napake -> ne zanzna importa -> popravljeno 
+
     
 
 def poberi_vsi(league_id, list_entry): # Za eno zgleda vredu več funkcij povzroča napako
     'For each member of league runs poberi()'
-
     #spremeni cd drugače mkdir kr nekje naredi mapo
     path_cd = os.path.join('Data_analysis', f'league_{league_id}') 
     os.chdir(path_cd)
-
     for player_id in list_entry:
         try: 
-            #ustvarja mape nč ne da v njih
-            #store_data zgleda problem
             poberi(league_id, int(player_id))
-        except: # ------------------------------------------------------> ne vem keatero napako javlja, probaj brez polaufati vse
+        except: 
+            #Nekatera spletna mesta igralcev ne najde, ne vem zkj?
+            #Se ne zgodi skoraj nikoli
             print(f'Problem with {player_id}')
     pass
 

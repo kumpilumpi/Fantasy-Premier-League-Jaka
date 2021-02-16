@@ -48,7 +48,7 @@ def league(league_id):
     return jsondic
 
 
-def csv_league_info(league_id,jsondic): #problem, ker tudi če ni csv_league poklican pokliče league in javlja napako
+def csv_league_info(league_id,jsondic): 
     'Creates csv with info about mini league'
     league_v = jsondic.get('league') #to je seznam z info o ligi
 
@@ -78,7 +78,7 @@ def csv_players_in_league(league_id, jsondic):
     pass
 
 
-def list_entry_id(jsondic): #preveri zgleda ok
+def list_entry_id(jsondic):
     'Returns list of entries from every player in a league' #z temi številkami pregledamo pol vsakega igralca v ligi
 
     results = standings = jsondic.get('standings')
