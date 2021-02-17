@@ -36,61 +36,55 @@ def get_list_id(league_id):
     return list(get_dic(league_id).keys())
 
 
-def gws_collect(league_id): 
-    ''' Collects info about gws from each player and joins then in one dictionary {id : df} '''
+def collect(league_id): 
+    ''' Collects info about gws and chips from each player and joins then in one dictionary {id : df} '''
     gws_pl = {}
+    chips_pl = {}
 
     for (id_ , name) in get_dic(league_id).items() :
-        try:
-            rel_path = os.path.join(os.pardir, 'Data_analysis', f'league_{league_id}', f'team_{id_}', 'gws.csv') # os.pardir -> ker ko importam v drug file se tam poti pokvarijo, ne vem zkj
-            df = pd.read_csv(rel_path)
-            df["id"] = id_
-            df["team_name"] = name
-            gws_pl[id_] = df
+        try: #info o GW
+            path_gw = os.path.join(os.pardir, 'Data_analysis', f'league_{league_id}', f'team_{id_}', 'gws.csv') # os.pardir -> ker ko importam v drug file se tam poti pokvarijo, ne vem zkj
+            df_gw = pd.read_csv(path_gw)
+            df_gw["id"] = id_
+            df_gw["team_name"] = name
+            gws_pl[id_] = df_gw
         except:
-            print(f"Problem with {id_} - {name}")           
-            
+            print(f"Problem with {id_} - {name}")  
+
+        try: #info o chipih
+            rel_path = os.path.join(os.pardir, 'Data_analysis', f'league_{league_id}', f'team_{id_}', 'chips.csv') # os.pardir -> ker ko importam v drug file se tam poti pokvarijo, ne vem zkj
+            df_chip = pd.read_csv(rel_path)
+            df_chip["id"] = id_
+            df_chip["team_name"] = name
+            chips_pl[id_] = df_chip
+        except:
+            pass    
+
     #Je naredil slovar id : df -> združimo vse v en df -> nardimo raj to kr v .ipnyb filu
     # df = pd.concat(list(gws_pl.values()))
     
-    return gws_pl # -> Če bomo rabl bomo že v pandasih združl pol
+    return (gws_pl, chips_pl) # -> Če bomo rabl bomo že v pandasih združl pol
 
 
 
-def chips_collect(league_id):
-    ''' Collects info about chips for each player in a dictionary '''
-    chips_pl = {}
-    for (id_ , name) in get_dic(league_id).items() :
-        try:
-            rel_path = os.path.join(os.pardir, 'Data_analysis', f'league_{league_id}', f'team_{id_}', 'chips.csv') # os.pardir -> ker ko importam v drug file se tam poti pokvarijo, ne vem zkj
-            df = pd.read_csv(rel_path)
-            df["id"] = id_
-            df["team_name"] = name
-            chips_pl[id_] = df
-        except:
-            pass
-    return chips_pl
-
-
-def picks_collect(league_id):
-    ''' Collects info about chips for each player in a dictionary '''
-    picks = {}
-    
-    for (id_ , name) in get_dic(league_id).items() :
-        try:
-            rel_path = os.path.join(os.pardir, 'Data_analysis', f'league_{league_id}', f'team_{id_}', 'chips.csv') # os.pardir -> ker ko importam v drug file se tam poti pokvarijo, ne vem zkj
-            df = pd.read_csv(rel_path)
-            df["id"] = id_
-            df["team_name"] = name
-            chips_pl[id_] = df
-        except:
-            pass
-    return chips_pl
+# def chips_collect(league_id):
+#     ''' Collects info about chips for each player in a dictionary '''
+#     chips_pl = {}
+#     for (id_ , name) in get_dic(league_id).items() :
+#         try:
+#             rel_path = os.path.join(os.pardir, 'Data_analysis', f'league_{league_id}', f'team_{id_}', 'chips.csv') # os.pardir -> ker ko importam v drug file se tam poti pokvarijo, ne vem zkj
+#             df = pd.read_csv(rel_path)
+#             df["id"] = id_
+#             df["team_name"] = name
+#             chips_pl[id_] = df
+#         except:
+#             pass
+#     return chips_pl
 
 #-----------------------------------
 
 
 
 #-----------------------------------
-x = chips_collect(746814)
+# x = collect(746814)
 
