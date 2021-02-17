@@ -28,7 +28,7 @@ V datoteki Data_analysis/miniliga pa so zbrana orodja za analizo poljubne minili
 
 Želja je, da bi dan repozitorij pomagal še kakšnemu FPL mangerju osvojiti miniligo.
 * Če želite analizirati svojo miniligo prvo poiščite *League_id* za svojo lastno ligo. Obiščite FPL spletno stran (ne aplikacije), pojdite v svojo ligo, poglejte url, ki bi moral izgledati https://fantasy.premierleague.com/api/leagues-classic/**League_id**/standings/ -> kjer piše League_id bo v vašem urlju večmestna številka to je vaš league_id.
-* Odprite terminal (poweeshell) se premaknite (cd) do tam kjer imate shranjen dan repozitorij in nato vpišite *python* <*league_id*>. Nato bi se vam morale vse potrebne datoteke prenesti (postopek lahko malo traja dobro minuto).
+* Odprite terminal (poweeshell) se premaknite (cd) do tam kjer imate shranjen dan repozitorij in nato vpišite *python* Main.py <*league_id*> . Nato bi se vam morale vse potrebne datoteke prenesti (postopek lahko malo traja, dobro minuto).
 * V Data_analysis se vam mora pojaviti dodatna mapa Legue_<*League_id*> in v njej podmape team_<*Player_id*>, kjer so v vsaki mapi shranjeni podtaki enega igralca iz vaše lige.
 * Odprite datoteko Miniliga in sledita danim navodilom v tej datoteki. Potrebno bo le še enkrat vnesti id vaše lige.
 
